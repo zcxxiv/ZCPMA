@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21782CEDDE414F127A8EF139 /* Pods_ZCPMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC63ECC77E05AF757EBADF64 /* Pods_ZCPMA.framework */; };
+		245C192B210CF97C00EF0D5E /* GetTestMember.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 245C192A210CF97C00EF0D5E /* GetTestMember.graphql */; };
+		245C192D210CFA1800EF0D5E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C192C210CFA1800EF0D5E /* API.swift */; };
+		245C1930210CFD7000EF0D5E /* RideCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C192F210CFD7000EF0D5E /* RideCreatorViewController.swift */; };
+		245C1932210CFE7700EF0D5E /* RideConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C1931210CFE7700EF0D5E /* RideConfirmationViewController.swift */; };
+		245C1934210D04F300EF0D5E /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C1933210D04F300EF0D5E /* Env.swift */; };
 		24C86EBF210CF1B900180D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C86EBE210CF1B900180D27 /* AppDelegate.swift */; };
-		24C86EC1210CF1B900180D27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C86EC0210CF1B900180D27 /* ViewController.swift */; };
 		24C86EC4210CF1B900180D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EC2210CF1B900180D27 /* Main.storyboard */; };
 		24C86EC6210CF1BA00180D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EC5210CF1BA00180D27 /* Assets.xcassets */; };
 		24C86EC9210CF1BA00180D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EC7210CF1BA00180D27 /* LaunchScreen.storyboard */; };
 		24C86ED4210CF1BA00180D27 /* ZCPMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C86ED3210CF1BA00180D27 /* ZCPMATests.swift */; };
 		24C86EDF210CF1BA00180D27 /* ZCPMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C86EDE210CF1BA00180D27 /* ZCPMAUITests.swift */; };
+		24C86EEF210CF50400180D27 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EEE210CF50300180D27 /* schema.json */; };
+		24D45051210E91AD00DAA100 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45043210E91AB00DAA100 /* NunitoSans-Regular.ttf */; };
+		24D45052210E91AD00DAA100 /* NunitoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45044210E91AB00DAA100 /* NunitoSans-ExtraBoldItalic.ttf */; };
+		24D45053210E91AD00DAA100 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45045210E91AB00DAA100 /* NunitoSans-Black.ttf */; };
+		24D45054210E91AD00DAA100 /* NunitoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45046210E91AB00DAA100 /* NunitoSans-ExtraLightItalic.ttf */; };
+		24D45055210E91AD00DAA100 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45047210E91AC00DAA100 /* NunitoSans-ExtraBold.ttf */; };
+		24D45056210E91AD00DAA100 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45048210E91AC00DAA100 /* NunitoSans-Bold.ttf */; };
+		24D45057210E91AD00DAA100 /* NunitoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45049210E91AC00DAA100 /* NunitoSans-LightItalic.ttf */; };
+		24D45058210E91AD00DAA100 /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D4504A210E91AC00DAA100 /* NunitoSans-Italic.ttf */; };
+		24D45059210E91AD00DAA100 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D4504B210E91AC00DAA100 /* NunitoSans-ExtraLight.ttf */; };
+		24D4505A210E91AD00DAA100 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D4504C210E91AC00DAA100 /* NunitoSans-Light.ttf */; };
+		24D4505B210E91AD00DAA100 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D4504D210E91AD00DAA100 /* NunitoSans-SemiBold.ttf */; };
+		24D4505C210E91AD00DAA100 /* NunitoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D4504E210E91AD00DAA100 /* NunitoSans-SemiBoldItalic.ttf */; };
+		24D4505D210E91AD00DAA100 /* NunitoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D4504F210E91AD00DAA100 /* NunitoSans-BoldItalic.ttf */; };
+		24D4505E210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45050210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf */; };
+		24D45060210EAEA500DAA100 /* WeekDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D4505F210EAEA500DAA100 /* WeekDaysCell.xib */; };
+		24D45062210EEB5E00DAA100 /* ExcludingDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D45061210EEB5E00DAA100 /* ExcludingDaysViewController.swift */; };
+		62B9C3890FC5739B6C78F990 /* Pods_ZCPMAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C38BBE93A9BE71F8EBC9CE /* Pods_ZCPMAUITests.framework */; };
+		A7EFA7814A5B1A4070FECA6D /* Pods_ZCPMATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DCCFF0D5999A76790D3C4E /* Pods_ZCPMATests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		245C192A210CF97C00EF0D5E /* GetTestMember.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetTestMember.graphql; sourceTree = "<group>"; };
+		245C192C210CFA1800EF0D5E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = ZCPMA/API.swift; sourceTree = SOURCE_ROOT; };
+		245C192F210CFD7000EF0D5E /* RideCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCreatorViewController.swift; sourceTree = "<group>"; };
+		245C1931210CFE7700EF0D5E /* RideConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideConfirmationViewController.swift; sourceTree = "<group>"; };
+		245C1933210D04F300EF0D5E /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		24C86EBB210CF1B900180D27 /* ZCPMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCPMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C86EBE210CF1B900180D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24C86EC0210CF1B900180D27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24C86EC3210CF1B900180D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24C86EC5210CF1BA00180D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C86EC8210CF1BA00180D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +75,32 @@
 		24C86EDA210CF1BA00180D27 /* ZCPMAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCPMAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C86EDE210CF1BA00180D27 /* ZCPMAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZCPMAUITests.swift; sourceTree = "<group>"; };
 		24C86EE0210CF1BA00180D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C86EEE210CF50300180D27 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		24D45043210E91AB00DAA100 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		24D45044210E91AB00DAA100 /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		24D45045210E91AB00DAA100 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
+		24D45046210E91AB00DAA100 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		24D45047210E91AC00DAA100 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		24D45048210E91AC00DAA100 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		24D45049210E91AC00DAA100 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		24D4504A210E91AC00DAA100 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
+		24D4504B210E91AC00DAA100 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		24D4504C210E91AC00DAA100 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		24D4504D210E91AD00DAA100 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		24D4504E210E91AD00DAA100 /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		24D4504F210E91AD00DAA100 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		24D45050210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		24D4505F210EAEA500DAA100 /* WeekDaysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekDaysCell.xib; sourceTree = "<group>"; };
+		24D45061210EEB5E00DAA100 /* ExcludingDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcludingDaysViewController.swift; sourceTree = "<group>"; };
+		44DCCFF0D5999A76790D3C4E /* Pods_ZCPMATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCPMATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		590E677CAF66AFA14103B373 /* Pods-ZCPMATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMATests/Pods-ZCPMATests.release.xcconfig"; sourceTree = "<group>"; };
+		5B22EC93CA3DE984DDCCB3F0 /* Pods-ZCPMAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMAUITests/Pods-ZCPMAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63C38BBE93A9BE71F8EBC9CE /* Pods_ZCPMAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCPMAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB1C65F9F153EB232F325B2 /* Pods-ZCPMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMA/Pods-ZCPMA.debug.xcconfig"; sourceTree = "<group>"; };
+		C0CD2ABE83B1A95DA17C116E /* Pods-ZCPMATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMATests/Pods-ZCPMATests.debug.xcconfig"; sourceTree = "<group>"; };
+		C987CFC490D12819994E5637 /* Pods-ZCPMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMA.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMA/Pods-ZCPMA.release.xcconfig"; sourceTree = "<group>"; };
+		D07F855B520C539113EEFC9E /* Pods-ZCPMAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMAUITests/Pods-ZCPMAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DC63ECC77E05AF757EBADF64 /* Pods_ZCPMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCPMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21782CEDDE414F127A8EF139 /* Pods_ZCPMA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EFA7814A5B1A4070FECA6D /* Pods_ZCPMATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +124,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62B9C3890FC5739B6C78F990 /* Pods_ZCPMAUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		245C1929210CF93100EF0D5E /* queries */ = {
+			isa = PBXGroup;
+			children = (
+				245C192A210CF97C00EF0D5E /* GetTestMember.graphql */,
+			);
+			path = queries;
+			sourceTree = "<group>";
+		};
+		245C192E210CFD2600EF0D5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24D45061210EEB5E00DAA100 /* ExcludingDaysViewController.swift */,
+				245C192F210CFD7000EF0D5E /* RideCreatorViewController.swift */,
+				245C1931210CFE7700EF0D5E /* RideConfirmationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		24C86EB2210CF1B900180D27 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +156,8 @@
 				24C86ED2210CF1BA00180D27 /* ZCPMATests */,
 				24C86EDD210CF1BA00180D27 /* ZCPMAUITests */,
 				24C86EBC210CF1B900180D27 /* Products */,
+				CA8946AE3546EA4FA47C6CE8 /* Pods */,
+				B4CB7D2499CA3DCDE72B0031 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +174,17 @@
 		24C86EBD210CF1B900180D27 /* ZCPMA */ = {
 			isa = PBXGroup;
 			children = (
+				24D45041210E916F00DAA100 /* Resource */,
+				245C192E210CFD2600EF0D5E /* Controller */,
+				24C86EED210CF47800180D27 /* Model */,
 				24C86EBE210CF1B900180D27 /* AppDelegate.swift */,
-				24C86EC0210CF1B900180D27 /* ViewController.swift */,
 				24C86EC2210CF1B900180D27 /* Main.storyboard */,
 				24C86EC5210CF1BA00180D27 /* Assets.xcassets */,
 				24C86EC7210CF1BA00180D27 /* LaunchScreen.storyboard */,
 				24C86ECA210CF1BA00180D27 /* Info.plist */,
+				24C86EEE210CF50300180D27 /* schema.json */,
+				245C1933210D04F300EF0D5E /* Env.swift */,
+				24D4505F210EAEA500DAA100 /* WeekDaysCell.xib */,
 			);
 			path = ZCPMA;
 			sourceTree = "<group>";
@@ -125,6 +207,67 @@
 			path = ZCPMAUITests;
 			sourceTree = "<group>";
 		};
+		24C86EED210CF47800180D27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				245C192C210CFA1800EF0D5E /* API.swift */,
+				245C1929210CF93100EF0D5E /* queries */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24D45041210E916F00DAA100 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				24D45042210E919900DAA100 /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		24D45042210E919900DAA100 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				24D45045210E91AB00DAA100 /* NunitoSans-Black.ttf */,
+				24D45050210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf */,
+				24D45048210E91AC00DAA100 /* NunitoSans-Bold.ttf */,
+				24D4504F210E91AD00DAA100 /* NunitoSans-BoldItalic.ttf */,
+				24D45047210E91AC00DAA100 /* NunitoSans-ExtraBold.ttf */,
+				24D45044210E91AB00DAA100 /* NunitoSans-ExtraBoldItalic.ttf */,
+				24D4504B210E91AC00DAA100 /* NunitoSans-ExtraLight.ttf */,
+				24D45046210E91AB00DAA100 /* NunitoSans-ExtraLightItalic.ttf */,
+				24D4504A210E91AC00DAA100 /* NunitoSans-Italic.ttf */,
+				24D4504C210E91AC00DAA100 /* NunitoSans-Light.ttf */,
+				24D45049210E91AC00DAA100 /* NunitoSans-LightItalic.ttf */,
+				24D45043210E91AB00DAA100 /* NunitoSans-Regular.ttf */,
+				24D4504D210E91AD00DAA100 /* NunitoSans-SemiBold.ttf */,
+				24D4504E210E91AD00DAA100 /* NunitoSans-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B4CB7D2499CA3DCDE72B0031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC63ECC77E05AF757EBADF64 /* Pods_ZCPMA.framework */,
+				44DCCFF0D5999A76790D3C4E /* Pods_ZCPMATests.framework */,
+				63C38BBE93A9BE71F8EBC9CE /* Pods_ZCPMAUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA8946AE3546EA4FA47C6CE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1C65F9F153EB232F325B2 /* Pods-ZCPMA.debug.xcconfig */,
+				C987CFC490D12819994E5637 /* Pods-ZCPMA.release.xcconfig */,
+				C0CD2ABE83B1A95DA17C116E /* Pods-ZCPMATests.debug.xcconfig */,
+				590E677CAF66AFA14103B373 /* Pods-ZCPMATests.release.xcconfig */,
+				5B22EC93CA3DE984DDCCB3F0 /* Pods-ZCPMAUITests.debug.xcconfig */,
+				D07F855B520C539113EEFC9E /* Pods-ZCPMAUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24C86EE3210CF1BA00180D27 /* Build configuration list for PBXNativeTarget "ZCPMA" */;
 			buildPhases = (
+				5D3A2BF8E576C02F6704DC72 /* [CP] Check Pods Manifest.lock */,
+				24C86EEC210CF33800180D27 /* Generate Apollo GraphQL API */,
 				24C86EB7210CF1B900180D27 /* Sources */,
 				24C86EB8210CF1B900180D27 /* Frameworks */,
 				24C86EB9210CF1B900180D27 /* Resources */,
+				913E865C941388737E514E18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24C86EE6210CF1BA00180D27 /* Build configuration list for PBXNativeTarget "ZCPMATests" */;
 			buildPhases = (
+				702C3DDDB1A646FB74B420B2 /* [CP] Check Pods Manifest.lock */,
 				24C86ECB210CF1BA00180D27 /* Sources */,
 				24C86ECC210CF1BA00180D27 /* Frameworks */,
 				24C86ECD210CF1BA00180D27 /* Resources */,
@@ -167,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24C86EE9210CF1BA00180D27 /* Build configuration list for PBXNativeTarget "ZCPMAUITests" */;
 			buildPhases = (
+				99C4347D867B97461B2FD030 /* [CP] Check Pods Manifest.lock */,
 				24C86ED6210CF1BA00180D27 /* Sources */,
 				24C86ED7210CF1BA00180D27 /* Frameworks */,
 				24C86ED8210CF1BA00180D27 /* Resources */,
@@ -229,8 +377,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D45055210E91AD00DAA100 /* NunitoSans-ExtraBold.ttf in Resources */,
+				24D4505E210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf in Resources */,
+				24D4505B210E91AD00DAA100 /* NunitoSans-SemiBold.ttf in Resources */,
+				24D45058210E91AD00DAA100 /* NunitoSans-Italic.ttf in Resources */,
+				24D4505C210E91AD00DAA100 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
+				24C86EEF210CF50400180D27 /* schema.json in Resources */,
+				24D45052210E91AD00DAA100 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
+				24D45051210E91AD00DAA100 /* NunitoSans-Regular.ttf in Resources */,
 				24C86EC9210CF1BA00180D27 /* LaunchScreen.storyboard in Resources */,
+				24D45059210E91AD00DAA100 /* NunitoSans-ExtraLight.ttf in Resources */,
+				24D45053210E91AD00DAA100 /* NunitoSans-Black.ttf in Resources */,
+				245C192B210CF97C00EF0D5E /* GetTestMember.graphql in Resources */,
+				24D45057210E91AD00DAA100 /* NunitoSans-LightItalic.ttf in Resources */,
+				24D45056210E91AD00DAA100 /* NunitoSans-Bold.ttf in Resources */,
+				24D4505D210E91AD00DAA100 /* NunitoSans-BoldItalic.ttf in Resources */,
 				24C86EC6210CF1BA00180D27 /* Assets.xcassets in Resources */,
+				24D4505A210E91AD00DAA100 /* NunitoSans-Light.ttf in Resources */,
+				24D45054210E91AD00DAA100 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
+				24D45060210EAEA500DAA100 /* WeekDaysCell.xib in Resources */,
 				24C86EC4210CF1B900180D27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,12 +416,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24C86EEC210CF33800180D27 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift";
+		};
+		5D3A2BF8E576C02F6704DC72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZCPMA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		702C3DDDB1A646FB74B420B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZCPMATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		913E865C941388737E514E18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZCPMA/Pods-ZCPMA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/VACalendar/VACalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VACalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCPMA/Pods-ZCPMA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C4347D867B97461B2FD030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZCPMAUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24C86EB7210CF1B900180D27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C86EC1210CF1B900180D27 /* ViewController.swift in Sources */,
+				24D45062210EEB5E00DAA100 /* ExcludingDaysViewController.swift in Sources */,
+				245C1934210D04F300EF0D5E /* Env.swift in Sources */,
+				245C192D210CFA1800EF0D5E /* API.swift in Sources */,
+				245C1932210CFE7700EF0D5E /* RideConfirmationViewController.swift in Sources */,
+				245C1930210CFD7000EF0D5E /* RideCreatorViewController.swift in Sources */,
 				24C86EBF210CF1B900180D27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +690,7 @@
 		};
 		24C86EE4210CF1BA00180D27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB1C65F9F153EB232F325B2 /* Pods-ZCPMA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +709,7 @@
 		};
 		24C86EE5210CF1BA00180D27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C987CFC490D12819994E5637 /* Pods-ZCPMA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +728,7 @@
 		};
 		24C86EE7210CF1BA00180D27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0CD2ABE83B1A95DA17C116E /* Pods-ZCPMATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +750,7 @@
 		};
 		24C86EE8210CF1BA00180D27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 590E677CAF66AFA14103B373 /* Pods-ZCPMATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +772,7 @@
 		};
 		24C86EEA210CF1BA00180D27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B22EC93CA3DE984DDCCB3F0 /* Pods-ZCPMAUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +793,7 @@
 		};
 		24C86EEB210CF1BA00180D27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07F855B520C539113EEFC9E /* Pods-ZCPMAUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

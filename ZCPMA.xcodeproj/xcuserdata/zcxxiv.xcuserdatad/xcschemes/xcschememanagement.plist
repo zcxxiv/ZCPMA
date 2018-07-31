@@ -7,7 +7,25 @@
 		<key>ZCPMA.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>24C86EBA210CF1B900180D27</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24C86ECE210CF1BA00180D27</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24C86ED9210CF1BA00180D27</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

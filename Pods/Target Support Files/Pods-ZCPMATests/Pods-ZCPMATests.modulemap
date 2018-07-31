@@ -1,0 +1,6 @@
+framework module Pods_ZCPMATests {
+  umbrella header "Pods-ZCPMATests-umbrella.h"
+
+  export *
+  module * { export * }
+}

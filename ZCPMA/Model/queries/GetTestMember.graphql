@@ -1,0 +1,24 @@
+fragment StudentFragment on Student {
+  id
+  firstName
+  lastName
+  dob
+  boosterSeat
+}
+
+
+fragment MemberFragment on Member {
+  id
+  firstName
+  lastName
+  email
+  students {
+    ...StudentFragment
+  }
+}
+
+query GetMember($memberId: ID!) {
+  Member(id: $memberId) {
+    ...MemberFragment
+  }
+}
