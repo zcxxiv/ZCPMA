@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
     UIApplication.shared.statusBarStyle = .lightContent
+    UIFont.overrideInitialize()
 
     apollo.cacheKeyForObject = { $0["id"] }
     

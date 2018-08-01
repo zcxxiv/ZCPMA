@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		21782CEDDE414F127A8EF139 /* Pods_ZCPMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC63ECC77E05AF757EBADF64 /* Pods_ZCPMA.framework */; };
+		2451B8802110C29400C2273C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451B87F2110C29400C2273C /* DatabaseManager.swift */; };
 		245C192B210CF97C00EF0D5E /* GetTestMember.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 245C192A210CF97C00EF0D5E /* GetTestMember.graphql */; };
 		245C192D210CFA1800EF0D5E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C192C210CFA1800EF0D5E /* API.swift */; };
 		245C1930210CFD7000EF0D5E /* RideCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C192F210CFD7000EF0D5E /* RideCreatorViewController.swift */; };
 		245C1932210CFE7700EF0D5E /* RideConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C1931210CFE7700EF0D5E /* RideConfirmationViewController.swift */; };
 		245C1934210D04F300EF0D5E /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C1933210D04F300EF0D5E /* Env.swift */; };
+		24871A072110AFA600D09321 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24871A062110AFA600D09321 /* ThemeManager.swift */; };
+		24871A092110B28B00D09321 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24871A082110B28B00D09321 /* AppFont.swift */; };
+		24871A0C2110B77900D09321 /* WeekDayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24871A0B2110B77900D09321 /* WeekDayRow.swift */; };
 		24C86EBF210CF1B900180D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C86EBE210CF1B900180D27 /* AppDelegate.swift */; };
 		24C86EC4210CF1B900180D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EC2210CF1B900180D27 /* Main.storyboard */; };
 		24C86EC6210CF1BA00180D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EC5210CF1BA00180D27 /* Assets.xcassets */; };
@@ -36,6 +40,7 @@
 		24D4505E210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D45050210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf */; };
 		24D45060210EAEA500DAA100 /* WeekDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D4505F210EAEA500DAA100 /* WeekDaysCell.xib */; };
 		24D45062210EEB5E00DAA100 /* ExcludingDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D45061210EEB5E00DAA100 /* ExcludingDaysViewController.swift */; };
+		24DACC302110B83C0096139A /* RideCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DACC2F2110B83C0096139A /* RideCreator.swift */; };
 		62B9C3890FC5739B6C78F990 /* Pods_ZCPMAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C38BBE93A9BE71F8EBC9CE /* Pods_ZCPMAUITests.framework */; };
 		A7EFA7814A5B1A4070FECA6D /* Pods_ZCPMATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DCCFF0D5999A76790D3C4E /* Pods_ZCPMATests.framework */; };
 /* End PBXBuildFile section */
@@ -58,11 +63,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2451B87F2110C29400C2273C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		245C192A210CF97C00EF0D5E /* GetTestMember.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetTestMember.graphql; sourceTree = "<group>"; };
 		245C192C210CFA1800EF0D5E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = ZCPMA/API.swift; sourceTree = SOURCE_ROOT; };
 		245C192F210CFD7000EF0D5E /* RideCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCreatorViewController.swift; sourceTree = "<group>"; };
 		245C1931210CFE7700EF0D5E /* RideConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideConfirmationViewController.swift; sourceTree = "<group>"; };
 		245C1933210D04F300EF0D5E /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		24871A062110AFA600D09321 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		24871A082110B28B00D09321 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		24871A0B2110B77900D09321 /* WeekDayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayRow.swift; sourceTree = "<group>"; };
 		24C86EBB210CF1B900180D27 /* ZCPMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCPMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C86EBE210CF1B900180D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C86EC3210CF1B900180D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +101,7 @@
 		24D45050210E91AD00DAA100 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
 		24D4505F210EAEA500DAA100 /* WeekDaysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekDaysCell.xib; sourceTree = "<group>"; };
 		24D45061210EEB5E00DAA100 /* ExcludingDaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcludingDaysViewController.swift; sourceTree = "<group>"; };
+		24DACC2F2110B83C0096139A /* RideCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCreator.swift; sourceTree = "<group>"; };
 		44DCCFF0D5999A76790D3C4E /* Pods_ZCPMATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZCPMATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		590E677CAF66AFA14103B373 /* Pods-ZCPMATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMATests/Pods-ZCPMATests.release.xcconfig"; sourceTree = "<group>"; };
 		5B22EC93CA3DE984DDCCB3F0 /* Pods-ZCPMAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCPMAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCPMAUITests/Pods-ZCPMAUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +159,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		24871A0521109ED000D09321 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				24871A062110AFA600D09321 /* ThemeManager.swift */,
+				2451B87F2110C29400C2273C /* DatabaseManager.swift */,
+				24871A082110B28B00D09321 /* AppFont.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		24871A0A2110B73A00D09321 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24871A0B2110B77900D09321 /* WeekDayRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		24C86EB2210CF1B900180D27 = {
 			isa = PBXGroup;
 			children = (
@@ -174,9 +202,11 @@
 		24C86EBD210CF1B900180D27 /* ZCPMA */ = {
 			isa = PBXGroup;
 			children = (
+				24871A0521109ED000D09321 /* Util */,
 				24D45041210E916F00DAA100 /* Resource */,
 				245C192E210CFD2600EF0D5E /* Controller */,
 				24C86EED210CF47800180D27 /* Model */,
+				24871A0A2110B73A00D09321 /* View */,
 				24C86EBE210CF1B900180D27 /* AppDelegate.swift */,
 				24C86EC2210CF1B900180D27 /* Main.storyboard */,
 				24C86EC5210CF1BA00180D27 /* Assets.xcassets */,
@@ -212,6 +242,7 @@
 			children = (
 				245C192C210CFA1800EF0D5E /* API.swift */,
 				245C1929210CF93100EF0D5E /* queries */,
+				24DACC2F2110B83C0096139A /* RideCreator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,14 +505,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZCPMA/Pods-ZCPMA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/VACalendar/VACalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VACalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,12 +553,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24871A092110B28B00D09321 /* AppFont.swift in Sources */,
+				2451B8802110C29400C2273C /* DatabaseManager.swift in Sources */,
 				24D45062210EEB5E00DAA100 /* ExcludingDaysViewController.swift in Sources */,
 				245C1934210D04F300EF0D5E /* Env.swift in Sources */,
 				245C192D210CFA1800EF0D5E /* API.swift in Sources */,
+				24DACC302110B83C0096139A /* RideCreator.swift in Sources */,
+				24871A0C2110B77900D09321 /* WeekDayRow.swift in Sources */,
 				245C1932210CFE7700EF0D5E /* RideConfirmationViewController.swift in Sources */,
 				245C1930210CFD7000EF0D5E /* RideCreatorViewController.swift in Sources */,
 				24C86EBF210CF1B900180D27 /* AppDelegate.swift in Sources */,
+				24871A072110AFA600D09321 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,10 +740,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMA/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -715,10 +756,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMA/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -735,11 +773,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMATests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -757,11 +791,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMATests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -778,11 +808,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMAUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -799,11 +825,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMAUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

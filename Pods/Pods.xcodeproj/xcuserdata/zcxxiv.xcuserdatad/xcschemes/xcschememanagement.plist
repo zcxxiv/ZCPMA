@@ -4,12 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Apollo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Eureka.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Moya.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PKHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -25,6 +40,11 @@
 			<false/>
 		</dict>
 		<key>Pods-ZCPMAUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

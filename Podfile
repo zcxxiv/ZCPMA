@@ -20,5 +20,7 @@ target 'ZCPMA' do
   pod 'Apollo', '~> 0.9.1'
   pod 'Eureka'
   pod 'VACalendar'
+  pod 'PKHUD'
+  pod 'Moya', '~> 10.0'
 
 end
