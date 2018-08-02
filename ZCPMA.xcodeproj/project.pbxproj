@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		21782CEDDE414F127A8EF139 /* Pods_ZCPMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC63ECC77E05AF757EBADF64 /* Pods_ZCPMA.framework */; };
+		240AD4512112466200104F51 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240AD4502112466200104F51 /* TimeUtils.swift */; };
 		2451B8802110C29400C2273C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451B87F2110C29400C2273C /* DatabaseManager.swift */; };
 		245C192B210CF97C00EF0D5E /* GetTestMember.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 245C192A210CF97C00EF0D5E /* GetTestMember.graphql */; };
 		245C192D210CFA1800EF0D5E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C192C210CFA1800EF0D5E /* API.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240AD4502112466200104F51 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
 		2451B87F2110C29400C2273C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		245C192A210CF97C00EF0D5E /* GetTestMember.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetTestMember.graphql; sourceTree = "<group>"; };
 		245C192C210CFA1800EF0D5E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = ZCPMA/API.swift; sourceTree = SOURCE_ROOT; };
@@ -165,6 +167,7 @@
 				24871A062110AFA600D09321 /* ThemeManager.swift */,
 				2451B87F2110C29400C2273C /* DatabaseManager.swift */,
 				24871A082110B28B00D09321 /* AppFont.swift */,
+				240AD4502112466200104F51 /* TimeUtils.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -372,13 +375,16 @@
 				TargetAttributes = {
 					24C86EBA210CF1B900180D27 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					24C86ECE210CF1BA00180D27 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 24C86EBA210CF1B900180D27;
 					};
 					24C86ED9210CF1BA00180D27 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 24C86EBA210CF1B900180D27;
 					};
 				};
@@ -450,7 +456,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		24C86EEC210CF33800180D27 /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -458,7 +464,7 @@
 			name = "Generate Apollo GraphQL API";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift";
 		};
@@ -559,6 +565,7 @@
 				245C1934210D04F300EF0D5E /* Env.swift in Sources */,
 				245C192D210CFA1800EF0D5E /* API.swift in Sources */,
 				24DACC302110B83C0096139A /* RideCreator.swift in Sources */,
+				240AD4512112466200104F51 /* TimeUtils.swift in Sources */,
 				24871A0C2110B77900D09321 /* WeekDayRow.swift in Sources */,
 				245C1932210CFE7700EF0D5E /* RideConfirmationViewController.swift in Sources */,
 				245C1930210CFD7000EF0D5E /* RideCreatorViewController.swift in Sources */,
@@ -740,7 +747,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMA/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -756,7 +766,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMA/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -773,7 +786,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMATests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -791,7 +808,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMATests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -808,7 +829,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMAUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -825,7 +850,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAJG7HQR88;
 				INFOPLIST_FILE = ZCPMAUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PMA.ZCPMAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum FavoredType: String {
+enum Favored: String {
   case Departure = "Departure"
   case Arrival = "Arrival"
   mutating func toggle() {
@@ -17,22 +17,6 @@ enum FavoredType: String {
       self = .Arrival
     case .Arrival:
       self = .Departure
-    }
-  }
-  var explanation: String {
-    switch self {
-    case .Departure:
-      return "Favoring Departure generates more accurate pickup window"
-    case .Arrival:
-      return "Favoring Arrival generates more accurate drop-off window"
-    }
-  }
-  var rideTimeLabel: String {
-    switch self {
-    case .Departure:
-      return "Pick Up At"
-    case .Arrival:
-      return "Drop Off By"
     }
   }
 }
@@ -44,21 +28,38 @@ extension Notification.Name {
 class RideCreator {
   static let shared = RideCreator()
   
-  var favored: FavoredType = .Departure
+  var favored: Favored = .Departure
   var riders: [GetMemberQuery.Data.Member.Student] = []
   var recurring: Bool = false
   var startDate: Date = Date() {
     didSet {
+      if endDate < startDate {
+        endDate = startDate
+      }
       NotificationCenter.default.post(Notification(
         name: Notification.Name.SheprdStartDateChange,
         object: self,
-        userInfo: ["startDate": startDate]
+        userInfo: nil
       ))
     }
   }
   var endDate: Date = Date()
   var excludingDates: [Date] = []
-  var repeatDays: [WeekDay] = []
+  var repeatDays: Set<WeekDay> = WeekDay.allWeekDays()
+  
+
+  var selectedDatesBeforeExcluding: [Date] {
+    return Date.getDatesBetween(startDate, endDate).filter(isInRepeatDays)
+  }
+  
+  var selectedDatesAfterExcluding: [Date] {
+    return selectedDatesBeforeExcluding.difference(from: excludingDates)
+  }
+  
+  private func isInRepeatDays(date: Date) -> Bool {
+    let weekdayValue = Calendar.current.component(.weekday, from: date)
+    return repeatDays.contains { $0.intValue() == weekdayValue }
+  }
   
   func resetForMember(member: GetMemberQuery.Data.Member) {
     favored = .Departure
@@ -67,6 +68,24 @@ class RideCreator {
     startDate = Date()
     endDate = Date()
     excludingDates = []
-    repeatDays = []
+    repeatDays = WeekDay.allWeekDays()
+  }
+  
+  static func getExcludingDates(beforeExcluding: [Date], afterExcluding: [Date]) -> [Date] {
+    return beforeExcluding.difference(from: afterExcluding)
+  }
+}
+
+extension Array where Element: Hashable {
+  func difference(from other: [Element]) -> [Element] {
+    let thisSet = Set(self)
+    let otherSet = Set(other)
+    return Array(thisSet.symmetricDifference(otherSet))
+  }
+}
+
+fileprivate extension WeekDay {
+  static func allWeekDays() -> Set<WeekDay> {
+    return [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
   }
 }

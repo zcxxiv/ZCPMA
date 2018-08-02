@@ -1,5 +1,5 @@
 //
-//  VerticalCalendarController.swift
+//  ExcludingDAysViewController
 //  VACalendar
 //
 //  Created by Anton Vodolazkyi on 20.02.18.
@@ -20,33 +20,28 @@ final class ExcludingDaysViewController: UIViewController {
   
   let defaultCalendar: Calendar = {
     var calendar = Calendar.current
-    calendar.firstWeekday = 1
     calendar.timeZone = TimeZone.current
     return calendar
   }()
   
   var calendarView: VACalendarView!
   
+  let selectedDaysBeforeExcluding = RideCreator.shared.selectedDatesBeforeExcluding
+  var excludingDates: [Date] = []
+  var selectedDates: [Date] = [] // final selected dates: selectedDatesBeforeExcluding - excludingDates
+
   @IBAction func done(_ sender: Any) {
     dismiss(animated: true, completion: nil)
   }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd"
     
-    let startDate = formatter.date(from: "2018-06-24")!
-    let endDate = formatter.date(from: "2018-11-30")!
-    
-    let selectedDays = [
-      formatter.date(from: "2018-07-25")!,
-      formatter.date(from: "2018-07-26")!,
-      formatter.date(from: "2018-07-27")!,
-      formatter.date(from: "2018-07-28")!,
-      formatter.date(from: "2018-07-29")!,
-      ]
+    let startDate = RideCreator.shared.startDate.startOfLastMonth()
+    let endDate = RideCreator.shared.endDate.endOfNextMonth()
     
     let calendar = VACalendar(
       startDate: startDate,
@@ -54,14 +49,14 @@ final class ExcludingDaysViewController: UIViewController {
       calendar: defaultCalendar
     )
     calendarView = VACalendarView(frame: .zero, calendar: calendar)
-    calendarView.setAvailableDates(DaysAvailability.some(selectedDays))
+    calendarView.setAvailableDates(DaysAvailability.some(selectedDaysBeforeExcluding))
     calendarView.showDaysOut = false
     calendarView.selectionStyle = .multi
     calendarView.dayViewAppearanceDelegate = self
     calendarView.monthViewAppearanceDelegate = self
     calendarView.calendarDelegate = self
     calendarView.scrollDirection = .vertical
-    calendarView.selectDates(selectedDays)
+    calendarView.selectDates(selectedDaysBeforeExcluding)
     view.addSubview(calendarView)
   }
   
@@ -106,7 +101,6 @@ extension ExcludingDaysViewController: VAMonthViewAppearanceDelegate {
 }
 
 extension ExcludingDaysViewController: VADayViewAppearanceDelegate {
-  
   func textColor(for state: VADayState) -> UIColor {
     switch state {
     case .out:
@@ -123,7 +117,7 @@ extension ExcludingDaysViewController: VADayViewAppearanceDelegate {
   func textBackgroundColor(for state: VADayState) -> UIColor {
     switch state {
     case .selected:
-      return UIColor(red: 58 / 255, green: 174 / 255, blue: 228 / 255, alpha: 1.0)
+      return ThemeManager.primaryColor()
     default:
       return .clear
     }
@@ -141,13 +135,27 @@ extension ExcludingDaysViewController: VADayViewAppearanceDelegate {
       return -7
     }
   }
-  
 }
 
 extension ExcludingDaysViewController: VACalendarViewDelegate {
-  
-  func selectedDate(_ date: Date) {
-    print(date)
+  func selectedDates(_ selectedDatesAfterExcluding: [Date]) {
+    RideCreator.shared.excludingDates = RideCreator.getExcludingDates(
+      beforeExcluding: selectedDaysBeforeExcluding,
+      afterExcluding: selectedDatesAfterExcluding
+    )
+  }
+}
+
+fileprivate extension Date {
+  func startOfLastMonth() -> Date {
+    let cal = Calendar.current
+    let sometimeLastMonth = cal.date(byAdding: DateComponents(month: -1), to: self)!
+    return cal.date(from: cal.dateComponents([.year, .month], from: sometimeLastMonth))!
   }
   
+  func endOfNextMonth() -> Date {
+    let cal = Calendar.current
+    let sometimeNextMonth = cal.date(byAdding: DateComponents(month: 2, day: -1), to: self)!
+    return cal.date(from: cal.dateComponents([.year, .month], from: sometimeNextMonth))!
+  }
 }

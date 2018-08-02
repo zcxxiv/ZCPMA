@@ -34,7 +34,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTn-Qa-xzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="-30"/>
+            <point key="canvasLocation" x="-39" y="-30"/>
         </scene>
         <!--Excluding Days-->
         <scene sceneID="0vJ-Yw-06w">
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzB-g6-ryA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1687.2" y="-820.83958020989508"/>
+            <point key="canvasLocation" x="2332" y="-741"/>
         </scene>
         <!--Schedule Ride-->
         <scene sceneID="m99-3i-lEf">
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2f-Ei-LlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1481" y="-30"/>
+            <point key="canvasLocation" x="1543" y="-30"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vdT-4E-vDc">
@@ -135,7 +135,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2FM-Kb-cyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-820.83958020989508"/>
+            <point key="canvasLocation" x="1532" y="-740"/>
         </scene>
     </scenes>
 </document>

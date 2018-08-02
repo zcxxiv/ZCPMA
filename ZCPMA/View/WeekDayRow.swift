@@ -9,17 +9,7 @@
 import UIKit
 import Eureka
 
-public enum WeekDay: String {
-  case monday = "Monday"
-  case tuesday = "Tuesday"
-  case wednesday = "Wednesday"
-  case thursday = "Thursday"
-  case friday = "Friday"
-  case saturday = "Saturday"
-  case sunday = "Sunday"
-}
-
-public class WeekDayCell : Cell<Set<WeekDay>>, CellType {
+class WeekDayCell : Cell<Set<WeekDay>>, CellType {
   
   @IBOutlet var sundayButton: UIButton!
   @IBOutlet var mondayButton: UIButton!
@@ -109,7 +99,7 @@ public class WeekDayCell : Cell<Set<WeekDay>>, CellType {
   }
 }
 
-public final class WeekDayRow: Row<WeekDayCell>, RowType {
+final class WeekDayRow: Row<WeekDayCell>, RowType {
   required public init(tag: String?) {
     super.init(tag: tag)
     displayValueFor = nil

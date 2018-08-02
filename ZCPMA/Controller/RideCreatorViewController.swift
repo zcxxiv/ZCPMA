@@ -11,7 +11,6 @@ import Eureka
 import PKHUD
 
 class RideCreatorViewController: FormViewController {
-  
   private func populateRidersList() {
     let riders = RideCreator.shared.riders.map { "\($0.firstName ?? "") \($0.lastName ?? "")" }
     for rider in riders {
@@ -60,15 +59,15 @@ class RideCreatorViewController: FormViewController {
     return DateInlineRow("RideDate") {
       $0.title = "Ride Date"
       $0.value = RideCreator.shared.startDate
+      $0.minimumDate = Date().startOfDay()
       $0.hidden = "$Recurring == true"
     }.onChange { row in
       guard let rideDate = row.value else { return }
-      RideCreator.shared.startDate = rideDate
-      RideCreator.shared.endDate = rideDate
+      RideCreator.shared.startDate = rideDate.startOfDay()
+      RideCreator.shared.endDate = rideDate.startOfDay()
     }.cellUpdate {cell, row in
       row.baseValue = RideCreator.shared.startDate
       cell.update()
-      row.reload()
     }
   }
   
@@ -76,14 +75,14 @@ class RideCreatorViewController: FormViewController {
     return DateInlineRow("StartDate") {
       $0.title = "Start Date"
       $0.value = RideCreator.shared.startDate
+      $0.minimumDate = Date().startOfDay()
       $0.hidden = "$Recurring == false"
     }.onChange { row in
       guard let startDate = row.value else { return }
-      RideCreator.shared.startDate = startDate
+      RideCreator.shared.startDate = startDate.startOfDay()
     }.cellUpdate {cell, row in
       row.baseValue = RideCreator.shared.startDate
       cell.update()
-      row.reload()
     }
   }
   
@@ -91,10 +90,14 @@ class RideCreatorViewController: FormViewController {
     return DateInlineRow("EndDate") {
       $0.title = "End Date"
       $0.value = RideCreator.shared.endDate
+      $0.minimumDate = RideCreator.shared.startDate
       $0.hidden = "$Recurring == false"
     }.onChange { row in
       guard let endDate = row.value else { return }
-      RideCreator.shared.endDate = endDate
+      RideCreator.shared.endDate = endDate.startOfDay()
+    }.cellUpdate { cell, row in
+      row.baseValue = RideCreator.shared.endDate
+      cell.update()
     }
   }
   
@@ -116,8 +119,11 @@ class RideCreatorViewController: FormViewController {
   private var repeatDaysRow: WeekDayRow {
     return WeekDayRow() {
       $0.title = "Repeat Days"
-      $0.value = [.monday, .wednesday, .friday]
+      $0.value = RideCreator.shared.repeatDays
       $0.hidden = "$Recurring == false"
+    }.onChange { row in
+      guard let repeatdays = row.value else { return }
+      RideCreator.shared.repeatDays = repeatdays
     }
   }
   
@@ -169,10 +175,11 @@ class RideCreatorViewController: FormViewController {
       forName: .SheprdStartDateChange,
       object: nil,
       queue: nil) { [weak self] notification in
-        guard let startDate = notification.userInfo?["StartDate"] as? Date else { return }
         self?.form.rowBy(tag: "RideDate")?.reload()
         self?.form.rowBy(tag: "StartDate")?.reload()
-        self?.form.rowBy(tag: "EndDate")?.reload()
+        let endDateRow = self?.form.rowBy(tag: "EndDate") as? DateInlineRow
+        endDateRow?.minimumDate = RideCreator.shared.startDate
+        endDateRow?.reload()
     }
     
     form
@@ -205,7 +212,27 @@ class RideCreatorViewController: FormViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "RideCreatorToRideConfirmationSegue" {
       print("to ride creator")
+    } else if segue.identifier == "ShowExcludingDaysModalSegue" {
+      print("to excluding dates controller")
     }
   }
-  
+}
+
+fileprivate extension Favored {
+  var explanation: String {
+    switch self {
+    case .Departure:
+      return "Favoring Departure generates more accurate pickup window"
+    case .Arrival:
+      return "Favoring Arrival generates more accurate drop-off window"
+    }
+  }
+  var rideTimeLabel: String {
+    switch self {
+    case .Departure:
+      return "Pick Up At"
+    case .Arrival:
+      return "Drop Off By"
+    }
+  }
 }
