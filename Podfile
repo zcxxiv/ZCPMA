@@ -2,6 +2,8 @@
 # platform :ios, '9.0'
 inhibit_all_warnings!
 
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'ZCPMA' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
@@ -18,6 +20,9 @@ target 'ZCPMA' do
     # Pods for testing
   end
 
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
   pod 'Apollo', '~> 0.9.1'
   pod 'Eureka'
   pod 'VACalendar'

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		21782CEDDE414F127A8EF139 /* Pods_ZCPMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC63ECC77E05AF757EBADF64 /* Pods_ZCPMA.framework */; };
 		240AD4512112466200104F51 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240AD4502112466200104F51 /* TimeUtils.swift */; };
+		24232CCD21175C0A0021C609 /* GetLocationsByPlaceIds.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 24232CCC21175C0A0021C609 /* GetLocationsByPlaceIds.graphql */; };
+		24367BE2211CB77800FC68D7 /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24367BE1211CB77800FC68D7 /* PaddedLabel.swift */; };
+		243E6F9D2118A9CC0080B2E5 /* LocationSelectionInputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E6F9C2118A9CC0080B2E5 /* LocationSelectionInputsViewController.swift */; };
+		243E6F9F2118A9FB0080B2E5 /* LocationSelectionResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E6F9E2118A9FB0080B2E5 /* LocationSelectionResultsTableViewController.swift */; };
+		24408B3621167F9700501887 /* LocationTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24408B3521167F9700501887 /* LocationTabelViewCell.swift */; };
 		2451B8802110C29400C2273C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2451B87F2110C29400C2273C /* DatabaseManager.swift */; };
 		245C192B210CF97C00EF0D5E /* GetTestMember.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 245C192A210CF97C00EF0D5E /* GetTestMember.graphql */; };
 		245C192D210CFA1800EF0D5E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245C192C210CFA1800EF0D5E /* API.swift */; };
@@ -18,6 +23,7 @@
 		24871A072110AFA600D09321 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24871A062110AFA600D09321 /* ThemeManager.swift */; };
 		24871A092110B28B00D09321 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24871A082110B28B00D09321 /* AppFont.swift */; };
 		24871A0C2110B77900D09321 /* WeekDayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24871A0B2110B77900D09321 /* WeekDayRow.swift */; };
+		2490FAE021137EF1002C9F27 /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490FADF21137EF1002C9F27 /* LocationSelectionViewController.swift */; };
 		24C86EBF210CF1B900180D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C86EBE210CF1B900180D27 /* AppDelegate.swift */; };
 		24C86EC4210CF1B900180D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EC2210CF1B900180D27 /* Main.storyboard */; };
 		24C86EC6210CF1BA00180D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C86EC5210CF1BA00180D27 /* Assets.xcassets */; };
@@ -65,6 +71,11 @@
 
 /* Begin PBXFileReference section */
 		240AD4502112466200104F51 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		24232CCC21175C0A0021C609 /* GetLocationsByPlaceIds.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetLocationsByPlaceIds.graphql; sourceTree = "<group>"; };
+		24367BE1211CB77800FC68D7 /* PaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
+		243E6F9C2118A9CC0080B2E5 /* LocationSelectionInputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionInputsViewController.swift; sourceTree = "<group>"; };
+		243E6F9E2118A9FB0080B2E5 /* LocationSelectionResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionResultsTableViewController.swift; sourceTree = "<group>"; };
+		24408B3521167F9700501887 /* LocationTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTabelViewCell.swift; sourceTree = "<group>"; };
 		2451B87F2110C29400C2273C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		245C192A210CF97C00EF0D5E /* GetTestMember.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetTestMember.graphql; sourceTree = "<group>"; };
 		245C192C210CFA1800EF0D5E /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = ZCPMA/API.swift; sourceTree = SOURCE_ROOT; };
@@ -74,6 +85,7 @@
 		24871A062110AFA600D09321 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		24871A082110B28B00D09321 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		24871A0B2110B77900D09321 /* WeekDayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayRow.swift; sourceTree = "<group>"; };
+		2490FADF21137EF1002C9F27 /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
 		24C86EBB210CF1B900180D27 /* ZCPMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCPMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C86EBE210CF1B900180D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C86EC3210CF1B900180D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				245C192A210CF97C00EF0D5E /* GetTestMember.graphql */,
+				24232CCC21175C0A0021C609 /* GetLocationsByPlaceIds.graphql */,
 			);
 			path = queries;
 			sourceTree = "<group>";
@@ -157,6 +170,9 @@
 				24D45061210EEB5E00DAA100 /* ExcludingDaysViewController.swift */,
 				245C192F210CFD7000EF0D5E /* RideCreatorViewController.swift */,
 				245C1931210CFE7700EF0D5E /* RideConfirmationViewController.swift */,
+				2490FADF21137EF1002C9F27 /* LocationSelectionViewController.swift */,
+				243E6F9C2118A9CC0080B2E5 /* LocationSelectionInputsViewController.swift */,
+				243E6F9E2118A9FB0080B2E5 /* LocationSelectionResultsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				24871A0B2110B77900D09321 /* WeekDayRow.swift */,
+				24408B3521167F9700501887 /* LocationTabelViewCell.swift */,
+				24367BE1211CB77800FC68D7 /* PaddedLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +333,7 @@
 				24C86EB8210CF1B900180D27 /* Frameworks */,
 				24C86EB9210CF1B900180D27 /* Resources */,
 				913E865C941388737E514E18 /* [CP] Embed Pods Frameworks */,
+				1E8B48A664D1A003257D106D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,6 +438,7 @@
 				24D4505B210E91AD00DAA100 /* NunitoSans-SemiBold.ttf in Resources */,
 				24D45058210E91AD00DAA100 /* NunitoSans-Italic.ttf in Resources */,
 				24D4505C210E91AD00DAA100 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
+				24232CCD21175C0A0021C609 /* GetLocationsByPlaceIds.graphql in Resources */,
 				24C86EEF210CF50400180D27 /* schema.json in Resources */,
 				24D45052210E91AD00DAA100 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
 				24D45051210E91AD00DAA100 /* NunitoSans-Regular.ttf in Resources */,
@@ -454,6 +474,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E8B48A664D1A003257D106D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZCPMA/Pods-ZCPMA-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCPMA/Pods-ZCPMA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		24C86EEC210CF33800180D27 /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -559,18 +601,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2490FAE021137EF1002C9F27 /* LocationSelectionViewController.swift in Sources */,
 				24871A092110B28B00D09321 /* AppFont.swift in Sources */,
 				2451B8802110C29400C2273C /* DatabaseManager.swift in Sources */,
 				24D45062210EEB5E00DAA100 /* ExcludingDaysViewController.swift in Sources */,
+				243E6F9F2118A9FB0080B2E5 /* LocationSelectionResultsTableViewController.swift in Sources */,
 				245C1934210D04F300EF0D5E /* Env.swift in Sources */,
 				245C192D210CFA1800EF0D5E /* API.swift in Sources */,
 				24DACC302110B83C0096139A /* RideCreator.swift in Sources */,
 				240AD4512112466200104F51 /* TimeUtils.swift in Sources */,
+				24408B3621167F9700501887 /* LocationTabelViewCell.swift in Sources */,
 				24871A0C2110B77900D09321 /* WeekDayRow.swift in Sources */,
 				245C1932210CFE7700EF0D5E /* RideConfirmationViewController.swift in Sources */,
 				245C1930210CFD7000EF0D5E /* RideCreatorViewController.swift in Sources */,
+				24367BE2211CB77800FC68D7 /* PaddedLabel.swift in Sources */,
 				24C86EBF210CF1B900180D27 /* AppDelegate.swift in Sources */,
 				24871A072110AFA600D09321 /* ThemeManager.swift in Sources */,
+				243E6F9D2118A9CC0080B2E5 /* LocationSelectionInputsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

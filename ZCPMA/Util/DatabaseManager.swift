@@ -12,14 +12,35 @@ class DatabaseManager {
   
   static func getMember(
     memberId: String,
-    completion: @escaping (_ member: GetMemberQuery.Data.Member?, _ error: Error?) -> Void)
+    completion: @escaping (
+      _ member: MemberFragment?,
+      _ memberLocations: [LocationFragment]?,
+      _ error: Error?) -> Void)
   {
     apollo.fetch(query: GetMemberQuery(memberId: memberId)) { result, error in
-      if error == nil {
-        completion(result?.data?.member, nil)
+      if error == nil,
+        let member = result?.data?.member,
+        let locations = result?.data?.memberLocations {
+        let memberLocations: [LocationFragment]? = locations.map { $0.fragments.locationFragment }
+        completion( member.fragments.memberFragment, memberLocations, nil)
       } else {
-        completion(nil, error)
+        completion(nil, nil, error)
       }
+    }
+  }
+  
+  static func getLocationsByPlaceIds(
+    placeIds: [String],
+    memberId: String,
+    completion: @escaping ( _ locations: [LocationFragment]?, _ error: Error?) -> Void) {
+    apollo.fetch(query: GetLocationByPlaceIdsQuery(
+      placeIds: placeIds,
+      memberId: memberId)) { result, error in
+        if error == nil, let locations = result?.data?.locations {
+          completion(locations.map {$0.fragments.locationFragment}, nil)
+        } else {
+          completion(nil, error)
+        }
     }
   }
   

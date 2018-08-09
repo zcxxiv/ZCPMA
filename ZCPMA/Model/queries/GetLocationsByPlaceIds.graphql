@@ -1,0 +1,56 @@
+query GetLocationByPlaceIds(
+    $placeIds: [String!]
+    $memberId: ID!
+  ) {
+  locations: allLocations(
+      filter: {
+        AND: [
+          {
+            places_some: {
+              placeId_in: $placeIds
+            }
+          },
+          {
+            OR: [
+              {
+                type: Partner_Facilities
+              }
+              {
+                type: Non_Partner_Facilities
+              }
+              {
+                AND: [
+                  {
+                    type: Non_Facilities
+                  }
+                  {
+                    owners_some: {
+                      id: $memberId
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ) {
+      ...LocationFragment
+    }
+  }
+
+fragment LocationFragment on Location {
+  id
+  formattedAddress
+  title
+  placeId
+  places {
+    id
+    placeId
+  }
+  type
+  lat
+  lng
+}
+
+

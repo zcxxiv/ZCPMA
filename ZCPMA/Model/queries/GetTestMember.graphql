@@ -21,4 +21,12 @@ query GetMember($memberId: ID!) {
   Member(id: $memberId) {
     ...MemberFragment
   }
+  memberLocations: allLocations(filter: {
+    OR: [
+      { pickupRides_some: { member: { id: $memberId }}},
+      { dropOffRides_some: { member: { id: $memberId }}}
+    ]
+  }) {
+    ...LocationFragment
+  }
 }

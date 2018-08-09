@@ -8,6 +8,8 @@
 
 import UIKit
 import Apollo
+import GoogleMaps
+import GooglePlaces
 
 let apollo = ApolloClient(url: URL(string: Env.graphQLEndpoint())!)
 
@@ -19,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    GMSServices.provideAPIKey(Env.googleMapsAPIKey())
+    GMSPlacesClient.provideAPIKey(Env.googlePlacesAPIKey())
     
     UIApplication.shared.statusBarStyle = .lightContent
     UIFont.overrideInitialize()

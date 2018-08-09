@@ -27,7 +27,7 @@ final class ExcludingDaysViewController: UIViewController {
   var calendarView: VACalendarView!
   
   let selectedDaysBeforeExcluding = RideCreator.shared.selectedDatesBeforeExcluding
-  var excludingDates: [Date] = []
+  var excludingDates: [Date] = RideCreator.shared.excludingDates
   var selectedDates: [Date] = [] // final selected dates: selectedDatesBeforeExcluding - excludingDates
 
   @IBAction func done(_ sender: Any) {
@@ -56,7 +56,7 @@ final class ExcludingDaysViewController: UIViewController {
     calendarView.monthViewAppearanceDelegate = self
     calendarView.calendarDelegate = self
     calendarView.scrollDirection = .vertical
-    calendarView.selectDates(selectedDaysBeforeExcluding)
+    calendarView.selectDates(excludingDates)
     view.addSubview(calendarView)
   }
   
@@ -91,11 +91,11 @@ extension ExcludingDaysViewController: VAMonthViewAppearanceDelegate {
   }
   
   func verticalMonthTitleColor() -> UIColor {
-    return .black
+    return .darkText
   }
   
   func verticalCurrentMonthTitleColor() -> UIColor {
-    return .red
+    return ThemeManager.primaryColor()
   }
   
 }
@@ -110,14 +110,14 @@ extension ExcludingDaysViewController: VADayViewAppearanceDelegate {
     case .unavailable:
       return .lightGray
     default:
-      return .black
+      return ThemeManager.primaryColor()
     }
   }
   
   func textBackgroundColor(for state: VADayState) -> UIColor {
     switch state {
     case .selected:
-      return ThemeManager.primaryColor()
+      return ThemeManager.secondaryColor()
     default:
       return .clear
     }
@@ -138,11 +138,8 @@ extension ExcludingDaysViewController: VADayViewAppearanceDelegate {
 }
 
 extension ExcludingDaysViewController: VACalendarViewDelegate {
-  func selectedDates(_ selectedDatesAfterExcluding: [Date]) {
-    RideCreator.shared.excludingDates = RideCreator.getExcludingDates(
-      beforeExcluding: selectedDaysBeforeExcluding,
-      afterExcluding: selectedDatesAfterExcluding
-    )
+  func selectedDates(_ excludingDates: [Date]) {
+    RideCreator.shared.excludingDates = excludingDates
   }
 }
 
